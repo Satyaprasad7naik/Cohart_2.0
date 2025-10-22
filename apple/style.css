@@ -1,8 +1,13 @@
+@font-face{
+    font-family: seb;
+    src: url(./sf-pro-text_regular\ \(1\).woff2 );
+}
+
 * {
      box-sizing: border-box;
      margin: 0;
      padding: 0;
-     font-family: Arial, Helvetica, sans-serif;
+     font-family:'Helvetica neue';;
  }
 html,
 body {
@@ -11,23 +16,67 @@ body {
   
 }
 
-#main{
-    height: 100%;
+/* #main{
+    height: 1000%;
     width: 100%;
-    background-color: #010101;
-}
+    background-color: #090909;
+} */
 
 #nav{
-    color:aliceblue;
-    height: 85px;
+    
+    height: 65px;
     width: 100%;
-    background-color: #404040;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#nav h4{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+#center {
+    height: 80vh;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    background-image: url("/apple/colors_blue__ct0n7mo30vwy_medium_2x.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    text-align: center;
+    padding: 50px;
+}
+
+
+#center h1{
+    color: rgb(255, 253, 253);
+    font-size: 60px;
+    font-weight: 600;
+    font-family: seb;
+}
+
+#center h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+
+}
+
+#links{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
+    padding: 20px ;
 }
 
-h4{
-    color: rgb(255, 255, 255);
+#links button{
+    background-color:royalblue ;
+    color: white;
+    padding : 13px 20px;
+    border:none;
+    border-radius: 50px;
+
 }
